@@ -1,0 +1,17 @@
+menu "Konfigurasi Sensor"
+    config SENSOR_TX_PIN
+        int "GPIO TX Pin"
+        range 0 39
+        default 2
+        help
+            pin TX untuk sensor 7in1 soil
+
+    config SENSOR_RX_PIN
+        int "GPIO RX Pin"
+        range 0 39
+        default 4
+        help
+            pin RX untuk sensor 7in1 soil
+    
+    
+endmenu
