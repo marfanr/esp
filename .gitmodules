@@ -1,0 +1,3 @@
+[submodule "components/bmx280"]
+	path = components/bmx280
+	url = https://github.com/utkumaden/esp-idf-bmx280.git
