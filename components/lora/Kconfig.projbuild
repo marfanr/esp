@@ -4,35 +4,35 @@ menu "Konfigurasi LORA"
         range 0 39
         default 18
         help
-            Pin CS untuk modul LoRa
+            Pin CS untuk SPI modul LoRa
     
     config LORA_RST_PIN
         int "GPIO RST Pin"
         range 0 39
         default 14
         help
-            Pin RST untuk modul LoRa
+            Pin RST untuk RESET modul LoRa
 
     config LORA_MISO_PIN
         int "GPIO MISO Pin"
         range 0 39
         default 12
         help
-            Pin MISO untuk modul LoRa
+            Pin MISO untuk SPI modul LoRa
     
     config LORA_MOSI_PIN
         int "GPIO MOSI Pin"
         range 0 39
         default 13
         help
-            Pin MOSI untuk modul LoRa
+            Pin MOSI untuk SPI modul LoRa
 
-    config LORA_SCK_PIN
-        int "GPIO SCK Pin"
+    config LORA_SCLK_PIN
+        int "GPIO SCLK Pin"
         range 0 39
         default 15
         help
-            Pin SCK untuk modul LoRa
+            Pin SCLK untuk SPI modul LoRa
 
     config LORA_IRQ_PIN
         int "GPIO IRQ Pin"
@@ -40,4 +40,11 @@ menu "Konfigurasi LORA"
         default 16
         help
             Pin IRQ untuk modul LoRa
+
+    config LORA_SPI_CLOCK_HZ
+        int "SPI Clock Speed (Hz)"
+        range 1000000 10000000
+        default 9000000
+        help
+            Kecepatan clock SPI untuk komunikasi dengan modul LoRa
 endmenu
