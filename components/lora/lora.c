@@ -5,7 +5,7 @@
 #include "esp_log.h"
 #include "hal/spi_types.h"
 #include "sdkconfig.h"
-#include <cstddef>
+// #include <cstddef>
 
 void setup_spi_device() {
   spi_bus_config_t buscfg = {

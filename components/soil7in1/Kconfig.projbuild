@@ -12,6 +12,11 @@ menu "Konfigurasi Sensor"
         default 4
         help
             pin RX untuk sensor 7in1 soil
+
+    config SENSOR_DE_RE_PIN
+        int "GPIO DE RE Pin"
+        range 0 39
+        default 4
     
     
 endmenu
